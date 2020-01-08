@@ -1,0 +1,37 @@
+{
+  "name": "Nebulas",
+  "short_name": "Nebulas",
+  "icons": [{
+  	  "src": "/images/icons/planet40x40.png",
+      "sizes": "40x40",
+      "type": "image/png"
+	  }, {
+  	  "src": "/images/icons/planet128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+	  }, {
+  	  "src": "/images/icons/planet144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+	  }, {
+  	  "src": "/images/icons/planet128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+	  }, {
+  	  "src": "/images/icons/planet144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+	  }, {
+  	  "src": "/images/icons/planet192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+	  }, {
+  	  "src": "/images/icons/planet512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#3E4EB8",
+  "theme_color": "#2F3BA2"
+}

@@ -1,0 +1,90 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Picture</title> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="addserviceworker" href="/addserviceworker.js" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Nebula">
+  <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+  <meta name="description" content="Nebula app">
+  <meta name="theme-color" content="#2F3BA2">
+  
+  
+  <link rel="shortcut icon" href="images/apple-icon-57x57.png">
+  <link rel="shortcut icon" href="images/apple-icon-60x60.png">
+  <link rel="shortcut icon" href="images/apple-icon-72x72.png">
+  <link rel="shortcut icon" href="images/apple-icon-76x76.png">
+  <link rel="shortcut icon" href="images/apple-icon-114x114.png">
+  <link rel="shortcut icon" href="images/apple-icon-120x120.png">
+  <link rel="shortcut icon" href="images/apple-icon-144x144.png">
+  <link rel="shortcut icon" href="images/apple-icon-152x152.png">
+  <link rel="shortcut icon" href="images/apple-icon-180x180.png">
+  <link rel="shortcut icon" href="images/apple-icon-512x512.png">
+<!--  <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
+  
+</head>
+<body>  
+  <div class="topnav" id="topNav">
+  <a class="active" href="#home">Home</a>
+  <a href="#info">Picture of the Day</a>
+  <a href="#nebula">Searched Picture</a>
+  <div class="search-container">
+      <input type="text" input-label="input" id="input" aria-label="input">
+      <button type="search" onclick="search()">Submit</button>
+  </div>
+</div>
+
+    
+  <div class="header"><button id="butInstall" aria-label="Install" hidden></button></div>
+  
+  <div class= "titlescreen" id= "home">
+    <div class="nebula">Picture of the Day
+  
+    </div>
+  </div>
+  
+  <div id="info"></div>
+  <img id ="dhurl" alt="pic" src="client.js"> 
+  
+    <div class= "titlescreen2">
+    <div class="nebula" id="nebula">Searched Picture
+  
+    </div>
+  </div>
+  <div id="pic"></div>
+  <div id="content"></div>
+  <script src="client.js"></script>
+  <script src="addserviceworker.js"></script>
+  <script src="service-worker.js"></script>
+        <script src="install.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

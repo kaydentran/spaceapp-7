@@ -1,0 +1,281 @@
+
+body {
+  font-family: 'Helvetica', 'Verdana', sans-serif;
+  margin: 0;
+  color: white;
+  background-color: black;  
+}
+
+/* Buttons for refresh and install */
+.header button {
+  border: none;
+  cursor: pointer;
+  height: 24px;
+  margin-right: 16px;
+  opacity: 0.54;
+  outline: none;
+  overflow: hidden;
+  text-indent: -30000px;
+  transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+  width: 24px;
+}
+
+.header #butInstall {
+  background: url(/images/install.svg) center center no-repeat;
+}
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ccc;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+
+
+
+
+
+
+/*Background image of first title*/
+.titlescreen {
+  color:white;
+  text-align: center;
+  background-image: url(https://cdn.glitch.com/d9cf65ee-730a-4e61-ac03-3ae1ca3eff27%2Fwil-stewart-RpDA3uYkJWM-unsplash.jpg?v=1575410234389);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 10px);
+}
+
+.titlescreen2 {
+  color:white;
+  text-align: center;
+  background-image: url(https://cdn.glitch.com/20810e91-39ba-414b-9a19-794ec5479499%2Fvincentiu-solomon-ln5drpv_ImI-unsplash.jpg?v=1576089350558);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 10px);
+}
+
+/*First title*/
+.nebula {
+  padding-top: 300px;
+    font-size: 80px;
+}
+
+
+/*info of picture of the day*/
+#info {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*image of the day*/
+#dhurl{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background-repeat: no-repeat;
+	height: auto;
+  margin-bottom: 100px;
+  margin-top: 40px;
+  
+}
+
+/*Piture and info of the image searched (Nebula)*/
+.card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-repeat: no-repeat;
+	height: auto;
+  text-align: center;
+}
+
+/*Title of picture of the day*/
+.title {
+  font-weight: bold;
+  font-size:50px;
+  text-align: center;
+  margin-bottom: -40px;
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+
+/*picture of the image searched (nebula) */
+.test {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+	height: auto;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 800px) {
+
+ /*info of picture of the day*/
+#info {
+ text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  font-size:13px; 
+}
+
+  /*Piture and info of the image searched (Nebula)*/
+.card {
+font-size:12px; 
+}
+
+  /*image of the day*/
+.title {
+font-size:20px; 
+margin-bottom: 20px;
+  
+}
+
+  /*picture of the image searched (nebula) */
+.test {
+font-size:13px; 
+  width: 90%;
+}
+  
+  .nebula {
+  padding-top: 300px;
+    font-size: 50px;
+} 
+} /*end of media screen*/
+
+
+
+
+
+
+
+/*Media screen numer 2*/
+@media screen and (min-width: 900px) {
+  
+   /*info of picture of the day*/
+  #info {
+ text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  font-size:20px;
+  }
+  
+  
+  /*image of the day*/
+  #dhurl{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+	height: auto;
+}
+  
+/*Title of picture of the day*/
+.card {
+font-size:20px; 
+width: 50%;
+}
+}/*end of media screen numer 2*/
+
+
+@media screen and (max-height: 600px) {
+.nebula {
+    font-size: 40px;
+  padding-top: 150px;
+}
+
+}
+
+/*
+@media screen and (max-width: 300px) {
+.nebula {
+  padding-top: 300px;
+    font-size: 30px;
+}
+  
+.titlescreen {
+  height: calc(100vh - 200px);
+}
+
+}*/
+
+
+
+
+
+
